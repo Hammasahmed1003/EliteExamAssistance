@@ -530,6 +530,7 @@ img {
 .feature-card,
 .process-card,
 .service-card,
+.service-showcase-card,
 .value-card,
 .checklist-card,
 .testimonial-card,
@@ -559,6 +560,7 @@ img {
 .feature-grid,
 .testimonial-grid,
 .service-grid,
+.service-showcase-grid,
 .value-grid,
 .checklist-grid {
   display: grid;
@@ -568,6 +570,7 @@ img {
 .feature-card,
 .process-card,
 .service-card,
+.service-showcase-card,
 .value-card,
 .checklist-card {
   padding: 28px;
@@ -597,6 +600,7 @@ img {
 .feature-card h3,
 .process-card h3,
 .service-card h2,
+.service-showcase-card h3,
 .value-card h3,
 .checklist-card h3 {
   margin-bottom: 12px;
@@ -751,6 +755,80 @@ img {
 
 .service-grid {
   grid-template-columns: 1fr;
+}
+
+.service-showcase-grid {
+  grid-template-columns: 1fr;
+}
+
+.service-showcase-card {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.95), rgba(247, 244, 238, 0.98));
+}
+
+.service-showcase-card::before {
+  content: '';
+  position: absolute;
+  right: -60px;
+  bottom: -80px;
+  width: 220px;
+  height: 220px;
+  border-radius: 999px;
+  opacity: 0.3;
+  filter: blur(10px);
+}
+
+.service-showcase-card--course::before {
+  background: rgba(130, 176, 255, 0.4);
+}
+
+.service-showcase-card--certification::before {
+  background: rgba(239, 186, 66, 0.36);
+}
+
+.service-showcase-card__header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.service-showcase-icon {
+  width: 54px;
+  height: 54px;
+  display: grid;
+  place-items: center;
+  border-radius: 18px;
+  background: var(--color-navy-950);
+  color: var(--color-white);
+  box-shadow: 0 16px 28px rgba(16, 27, 45, 0.18);
+}
+
+.service-mini-label {
+  margin-bottom: 8px;
+  color: var(--color-text-soft);
+}
+
+.service-tag-list {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.service-tag {
+  display: inline-flex;
+  align-items: center;
+  min-height: 42px;
+  padding: 0 16px;
+  border-radius: 999px;
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  color: var(--color-text);
+  font-weight: 800;
+  box-shadow: 0 10px 20px rgba(16, 27, 45, 0.05);
 }
 
 .service-feature-list {
@@ -1014,6 +1092,7 @@ img {
   .stats-grid,
   .feature-grid,
   .testimonial-grid,
+  .service-showcase-grid,
   .footer-grid,
   .value-grid,
   .checklist-grid {
@@ -1034,6 +1113,10 @@ img {
 
   .service-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .service-showcase-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 

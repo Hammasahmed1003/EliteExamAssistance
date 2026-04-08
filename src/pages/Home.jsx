@@ -10,6 +10,7 @@ import {
   Sparkles,
   Star,
   Target,
+  Trophy,
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -52,21 +53,34 @@ const roadmapSteps = [
   },
 ];
 
+const serviceGroups = [
+  {
+    title: 'Online Courses',
+    accent: 'course',
+    items: ['StraighterLine', 'WGU Courses', 'Sophia', 'Apex Courses'],
+  },
+  {
+    title: 'Certifications',
+    accent: 'certification',
+    items: ['GED', 'TEAS', 'ATI TEAS', 'HESI', 'CNA', 'CompTIA'],
+  },
+];
+
 const testimonials = [
   {
-    name: 'Sarah M.',
-    exam: 'NCLEX-RN',
-    text: 'I went from feeling embarrassed about failing twice to feeling genuinely ready. The strategy made all the difference.',
+    name: 'Marissa R.',
+    exam: 'WGU Course Support',
+    text: 'I was stuck in two WGU classes and losing confidence fast. Their online support helped me organize the material and finally move forward.',
   },
   {
-    name: 'James T.',
-    exam: 'SAT',
-    text: 'My score jumped 240 points because every session was aimed at exactly what was holding me back.',
+    name: 'Daniel K.',
+    exam: 'ATI TEAS',
+    text: 'The ATI TEAS prep felt focused from day one. I knew what to study, how to pace myself, and where I was actually improving.',
   },
   {
-    name: 'Jessica L.',
-    exam: 'TEAS',
-    text: 'They helped me fix both the science content and the panic that used to show up during practice tests.',
+    name: 'Shania P.',
+    exam: 'GED and CNA Prep',
+    text: 'What helped most was how personalized everything felt. They made a hard process feel manageable, and I stopped second-guessing myself.',
   },
 ];
 
@@ -186,6 +200,46 @@ const Home = () => {
         </div>
       </section>
 
+      <section className="section service-showcase-section">
+        <div className="container">
+          <div className="section-heading animate-fade-up">
+            <p className="eyebrow">What we offer</p>
+            <h2>Online course support and certification prep built around the exact path you are on.</h2>
+            <p>
+              We support students working through online academic platforms and major certification
+              exams with focused help that keeps progress moving.
+            </p>
+          </div>
+
+          <div className="service-showcase-grid">
+            {serviceGroups.map((group, index) => (
+              <article
+                key={group.title}
+                className={`service-showcase-card service-showcase-card--${group.accent} animate-fade-up delay-${(index + 1) * 100}`}
+              >
+                <div className="service-showcase-card__header">
+                  <div className="service-showcase-icon">
+                    {group.accent === 'course' ? <BookOpen size={22} /> : <Trophy size={22} />}
+                  </div>
+                  <div>
+                    <p className="mini-label service-mini-label">{group.title}</p>
+                    <h3>{group.title} We Support</h3>
+                  </div>
+                </div>
+
+                <div className="service-tag-list">
+                  {group.items.map((item) => (
+                    <span key={item} className="service-tag">
+                      {item}
+                    </span>
+                  ))}
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="section section-muted">
         <div className="container process-layout">
           <div className="process-copy animate-fade-up">
@@ -248,7 +302,7 @@ const Home = () => {
         <div className="container">
           <div className="section-heading section-heading-light animate-fade-up">
             <p className="eyebrow eyebrow-light">Student wins</p>
-            <h2>Real progress from students who were tired of guessing.</h2>
+            <h2>Updated reviews from students getting support across courses and certifications.</h2>
           </div>
 
           <div className="testimonial-grid">
