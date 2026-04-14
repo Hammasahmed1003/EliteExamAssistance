@@ -28,7 +28,7 @@ const Navbar = () => {
     <header className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="container nav-container">
         <Link to="/" className="brand-mark" aria-label="Elite Exam Assistance home">
-          <span className="brand-mark__crest">EE</span>
+          <img src="/logo.jpeg" alt="" className="brand-mark__logo" />
           <span className="brand-mark__text">
             <strong>Elite Exam</strong>
             <span>Assistance</span>

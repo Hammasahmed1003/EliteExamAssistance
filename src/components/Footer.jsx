@@ -13,7 +13,7 @@ const Footer = () => {
       <div className="container footer-grid">
         <div className="footer-panel footer-brand-panel">
           <Link to="/" className="brand-mark brand-mark-footer" aria-label="Elite Exam Assistance home">
-            <span className="brand-mark__crest">EE</span>
+            <img src="/logo.jpeg" alt="" className="brand-mark__logo brand-mark__logo-footer" />
             <span className="brand-mark__text">
               <strong>Elite Exam</strong>
               <span>Assistance</span>
