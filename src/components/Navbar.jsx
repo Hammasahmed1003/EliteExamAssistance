@@ -45,7 +45,7 @@ const Navbar = () => {
               {link.name}
             </Link>
           ))}
-          <Link to="/services" className="btn btn-accent btn-compact">
+          <Link to="/book-call" className="btn btn-accent btn-compact">
             Book a Strategy Call
           </Link>
         </nav>
@@ -75,7 +75,7 @@ const Navbar = () => {
               {link.name}
             </Link>
           ))}
-          <Link to="/services" className="btn btn-accent mobile-cta" onClick={() => setIsOpen(false)}>
+          <Link to="/book-call" className="btn btn-accent mobile-cta" onClick={() => setIsOpen(false)}>
             Start Your Plan <ArrowRight size={18} />
           </Link>
         </div>

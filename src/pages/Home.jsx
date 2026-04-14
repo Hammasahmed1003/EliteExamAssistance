@@ -17,24 +17,24 @@ import { Link } from 'react-router-dom';
 const proofStats = [
   { value: '97%', label: 'Students who say they felt more prepared within the first month' },
   { value: '1:1', label: 'Private support built around your exam, pace, and pressure points' },
-  { value: '25%', label: 'Average score improvement reported after focused tutoring cycles' },
+  { value: '25%', label: 'Average score improvement reported after focused support cycles' },
 ];
 
 const featureCards = [
   {
     icon: <Target size={24} />,
-    title: 'Precision study plans',
-    text: 'We identify where points are leaking and build a plan that attacks the highest-value gaps first.',
+    title: 'Precision support plans',
+    text: 'We identify what is slowing you down and build a plan around the highest-value course or exam priorities first.',
   },
   {
     icon: <Brain size={24} />,
     title: 'Confidence under pressure',
-    text: 'Sessions blend content mastery with practical coaching so anxiety does not hijack performance.',
+    text: 'Support blends content clarity with practical strategy so anxiety does not hijack performance.',
   },
   {
     icon: <ChartColumn size={24} />,
     title: 'Progress you can see',
-    text: 'Every week has clear checkpoints, score targets, and next-step decisions instead of vague studying.',
+    text: 'Every week has clear checkpoints, score targets, and next-step decisions instead of vague, overwhelming prep.',
   },
 ];
 
@@ -45,11 +45,11 @@ const roadmapSteps = [
   },
   {
     title: 'Build the passing system',
-    text: 'You get a focused game plan with drills, tutoring sessions, and review loops matched to your deadline.',
+    text: 'You get a focused game plan with guided checkpoints, review loops, and accountability matched to your deadline.',
   },
   {
-    title: 'Train for exam day',
-    text: 'We sharpen timing, confidence, and decision-making until the test feels familiar instead of overwhelming.',
+    title: 'Prepare for exam day',
+    text: 'We sharpen timing, confidence, and decision-making until the exam feels familiar instead of overwhelming.',
   },
 ];
 
@@ -69,18 +69,33 @@ const serviceGroups = [
 const testimonials = [
   {
     name: 'Marissa R.',
-    exam: 'WGU Course Support',
-    text: 'I was stuck in two WGU classes and losing confidence fast. Their online support helped me organize the material and finally move forward.',
+    exam: 'WGU Coursework Support',
+    text: 'I had multiple WGU tasks open and no clear order of attack. Elite helped me organize everything, understand what each requirement needed, and finally make steady progress again.',
   },
   {
     name: 'Daniel K.',
-    exam: 'ATI TEAS',
-    text: 'The ATI TEAS prep felt focused from day one. I knew what to study, how to pace myself, and where I was actually improving.',
+    exam: 'ATI TEAS Readiness',
+    text: 'I was overwhelmed by the ATI TEAS and kept jumping between random materials. Their support gave me a clear plan, section priorities, and the confidence to stay consistent.',
   },
   {
     name: 'Shania P.',
-    exam: 'GED and CNA Prep',
-    text: 'What helped most was how personalized everything felt. They made a hard process feel manageable, and I stopped second-guessing myself.',
+    exam: 'GED and CNA Support',
+    text: 'Between GED review and CNA requirements, I felt behind before I even started. The team broke everything down into manageable steps and helped me keep moving without panic.',
+  },
+  {
+    name: 'Andre M.',
+    exam: 'Sophia Assignment Guidance',
+    text: 'Sophia felt simple at first, but the assignments started piling up. Elite helped me understand the expectations, plan my deadlines, and submit work I felt confident about.',
+  },
+  {
+    name: 'Priya S.',
+    exam: 'CompTIA Certification Prep',
+    text: 'CompTIA topics were hard to organize on my own. I got a cleaner path through the material, better accountability, and a practical way to track what was ready and what was not.',
+  },
+  {
+    name: 'Carlos V.',
+    exam: 'StraighterLine Course Help',
+    text: 'I needed structure more than anything. They helped me map the course, stay on schedule, and understand the parts that were slowing me down.',
   },
 ];
 
@@ -95,17 +110,17 @@ const Home = () => {
           <div className="hero-copy animate-fade-up">
             <p className="eyebrow eyebrow-light">
               <Sparkles size={14} />
-              Personalized tutoring for high-stakes exams
+              Online course, assignment, and certification support
             </p>
             <h1>
               Turn test stress into a clear, measurable plan to pass.
             </h1>
             <p className="hero-lead">
               Elite Exam Assistance helps students recover from missed scores, rebuild
-              confidence, and walk into exam day knowing exactly what to do.
+              confidence, and move through exams, coursework, and certifications with a clear plan.
             </p>
             <div className="hero-actions">
-              <Link to="/services" className="btn btn-accent">
+              <Link to="/book-call" className="btn btn-accent">
                 Book a Free Strategy Call <ArrowRight size={18} />
               </Link>
               <Link to="/about" className="btn btn-secondary">
@@ -115,7 +130,7 @@ const Home = () => {
             <div className="hero-proof">
               <div>
                 <strong>Trusted by anxious test takers</strong>
-                <span>Built for NCLEX, SAT, ACT, TEAS, and admissions prep.</span>
+                <span>Built for online courses, assignments, GED, TEAS, HESI, CNA, and CompTIA.</span>
               </div>
               <div className="hero-stars" aria-label="Five star support">
                 {[...Array(5)].map((_, index) => (
@@ -151,7 +166,7 @@ const Home = () => {
             <div className="hero-card hero-card-floating">
               <div className="hero-chip">
                 <BookOpen size={18} />
-                Weekly tutoring roadmap
+                Weekly course support roadmap
               </div>
               <div className="hero-chip">
                 <Clock3 size={18} />
@@ -181,10 +196,10 @@ const Home = () => {
         <div className="container">
           <div className="section-heading animate-fade-up">
             <p className="eyebrow">Why students stay with us</p>
-            <h2>We replace generic prep with focused coaching that changes outcomes.</h2>
+            <h2>We replace generic advice with focused support that changes outcomes.</h2>
             <p>
-              The difference is not more worksheets. It is knowing what to practice, how to
-              practice it, and how to stay composed when the stakes feel high.
+              The difference is clarity. Students need to know what matters, what to prioritize,
+              and how to stay composed when deadlines and exams feel heavy.
             </p>
           </div>
 
@@ -246,8 +261,8 @@ const Home = () => {
             <p className="eyebrow">How we build momentum</p>
             <h2>A simple three-step system that gives you traction fast.</h2>
             <p>
-              This is a hands-on partnership, not passive tutoring. We use each session to
-              reduce noise, sharpen decisions, and push you toward the score you need.
+              This is a hands-on academic support system. We reduce noise, sharpen decisions,
+              and push you toward the course progress or score you need.
             </p>
             <Link to="/services" className="btn btn-primary">
               Explore programs
@@ -274,15 +289,15 @@ const Home = () => {
             <div className="success-points">
               <p>
                 <CheckCircle2 size={18} />
-                Structured homework and feedback loops between sessions
+                Structured assignment guidance and feedback loops
               </p>
               <p>
                 <CheckCircle2 size={18} />
-                Strategy coaching for pacing, confidence, and question selection
+                Strategy support for pacing, confidence, and question selection
               </p>
               <p>
                 <CheckCircle2 size={18} />
-                Clear accountability so progress does not stall between study blocks
+                Clear accountability so progress does not stall between support blocks
               </p>
             </div>
           </div>
@@ -302,7 +317,7 @@ const Home = () => {
         <div className="container">
           <div className="section-heading section-heading-light animate-fade-up">
             <p className="eyebrow eyebrow-light">Student wins</p>
-            <h2>Updated reviews from students getting support across courses and certifications.</h2>
+            <h2>Students trust us when coursework, assignments, and certification pressure start piling up.</h2>
           </div>
 
           <div className="testimonial-grid">
@@ -335,7 +350,7 @@ const Home = () => {
             Book a free intro call and we’ll map out your priorities, timeline, and best next
             move before you commit to anything.
           </p>
-          <Link to="/services" className="btn btn-accent">
+          <Link to="/book-call" className="btn btn-accent">
             Get Started Today <ArrowRight size={18} />
           </Link>
         </div>

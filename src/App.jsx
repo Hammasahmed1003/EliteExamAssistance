@@ -6,6 +6,7 @@ import AnimatedCursor from './components/AnimatedCursor';
 import Home from './pages/Home';
 import Services from './pages/Services';
 import About from './pages/About';
+import BookCall from './pages/BookCall';
 
 function ScrollToTop() {
   const location = useLocation();
@@ -29,6 +30,7 @@ function AppShell() {
             <Route path="/" element={<Home />} />
             <Route path="/services" element={<Services />} />
             <Route path="/about" element={<About />} />
+            <Route path="/book-call" element={<BookCall />} />
           </Routes>
         </main>
         <Footer />

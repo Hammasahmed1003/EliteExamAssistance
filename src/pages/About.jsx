@@ -5,12 +5,12 @@ const values = [
   {
     icon: <Shield size={24} />,
     title: 'High standards',
-    text: 'Students trust us with high-stakes goals, so we bring structure, preparation, and honest guidance to every session.',
+    text: 'Students trust us with high-stakes goals, so we bring structure, preparation, and honest guidance to every milestone.',
   },
   {
     icon: <HeartHandshake size={24} />,
     title: 'Human support',
-    text: 'We understand what it feels like to be discouraged, behind schedule, or unsure where to start, and we coach from that reality.',
+    text: 'We understand what it feels like to be discouraged, behind schedule, or unsure where to start, and we support students from that reality.',
   },
   {
     icon: <Rocket size={24} />,
@@ -27,7 +27,7 @@ const About = () => {
           <p className="eyebrow eyebrow-light">About Elite Exam Assistance</p>
           <h1>We help students rebuild belief in themselves and back it up with a real plan.</h1>
           <p>
-            Our work sits at the intersection of tutoring, strategy, and steady encouragement.
+            Our work sits at the intersection of academic support, strategy, and steady encouragement.
             We are here for the student who knows they can do more but needs the right support to prove it.
           </p>
         </div>
@@ -40,12 +40,12 @@ const About = () => {
             <h2>Take the fear and confusion out of high-stakes exam prep.</h2>
             <p>
               Elite Exam Assistance was built for students who are tired of generic advice and
-              random study routines. We focus on the patterns behind low scores, then create a
+              random course routines. We focus on the patterns behind low scores, then create a
               targeted path toward stronger performance.
             </p>
             <p>
-              That means better review systems, better pacing, better confidence, and a tutor who
-              understands both the academic and emotional side of prep.
+              That means better review systems, better pacing, better confidence, and a support team
+              that understands both the academic and emotional side of the process.
             </p>
             <Link to="/services" className="btn btn-primary">
               Explore our services
@@ -61,7 +61,7 @@ const About = () => {
             <div className="about-highlight__stats">
               <div>
                 <span>97%</span>
-                <p>report stronger confidence after consistent sessions</p>
+                <p>report stronger confidence after consistent support</p>
               </div>
               <div>
                 <span>7 days</span>
@@ -76,7 +76,7 @@ const About = () => {
         <div className="container">
           <div className="section-heading animate-fade-up">
             <p className="eyebrow">What guides our work</p>
-            <h2>The values behind every plan, session, and student conversation.</h2>
+            <h2>The values behind every plan, milestone, and student conversation.</h2>
           </div>
           <div className="value-grid">
             {values.map(({ icon, title, text }, index) => (
