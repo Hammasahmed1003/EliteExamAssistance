@@ -20,8 +20,8 @@ const Footer = () => {
             </span>
           </Link>
           <p className="footer-copy">
-            Premium online course, assignment, and certification support for students who need
-            a smarter plan, stronger confidence, and a result that opens the next door.
+            Premium academic support for online courses, assignment planning, practical
+            requirements, and certification preparation when deadlines are getting close.
           </p>
           <Link to="/services" className="footer-inline-link">
             View programs <ArrowUpRight size={16} />
@@ -59,7 +59,7 @@ const Footer = () => {
       </div>
 
       <div className="container footer-bottom">
-        <p>© {new Date().getFullYear()} Elite Exam Assistance. Personalized support, built for your next milestone.</p>
+        <p>© {new Date().getFullYear()} Elite Exam Assistance. Organized support for your next academic milestone.</p>
       </div>
     </footer>
   );

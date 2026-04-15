@@ -15,41 +15,41 @@ import {
 import { Link } from 'react-router-dom';
 
 const proofStats = [
-  { value: '97%', label: 'Students who say they felt more prepared within the first month' },
-  { value: '1:1', label: 'Private support built around your exam, pace, and pressure points' },
-  { value: '25%', label: 'Average score improvement reported after focused support cycles' },
+  { value: '97%', label: 'Students who say their workload felt clearer after getting organized support' },
+  { value: '1:1', label: 'Private academic support built around your platform, deadline, and requirements' },
+  { value: '24/7', label: 'Online-first help for courses, assignments, practicals, and certification pressure' },
 ];
 
 const featureCards = [
   {
     icon: <Target size={24} />,
-    title: 'Precision support plans',
-    text: 'We identify what is slowing you down and build a plan around the highest-value course or exam priorities first.',
+    title: 'Requirement-first planning',
+    text: 'We help break down what your course, practical, assignment, or certification requires so nothing feels scattered.',
   },
   {
     icon: <Brain size={24} />,
-    title: 'Confidence under pressure',
-    text: 'Support blends content clarity with practical strategy so anxiety does not hijack performance.',
+    title: 'Deadline control',
+    text: 'We turn overdue tasks, confusing instructions, and exam pressure into a clear order of action.',
   },
   {
     icon: <ChartColumn size={24} />,
-    title: 'Progress you can see',
-    text: 'Every week has clear checkpoints, score targets, and next-step decisions instead of vague, overwhelming prep.',
+    title: 'Progress you can track',
+    text: 'You always know what is pending, what is ready, and what needs attention next.',
   },
 ];
 
 const roadmapSteps = [
   {
-    title: 'Diagnose the real blockers',
-    text: 'We audit your weak topics, testing habits, pacing, and mindset so we solve the right problem first.',
+    title: 'Review the requirement',
+    text: 'We look at the platform, course instructions, assignment expectations, or exam requirements first.',
   },
   {
-    title: 'Build the passing system',
-    text: 'You get a focused game plan with guided checkpoints, review loops, and accountability matched to your deadline.',
+    title: 'Organize the workload',
+    text: 'We map the tasks, timelines, materials, and checkpoints so the work stops feeling impossible.',
   },
   {
-    title: 'Prepare for exam day',
-    text: 'We sharpen timing, confidence, and decision-making until the exam feels familiar instead of overwhelming.',
+    title: 'Move with confidence',
+    text: 'You get steady support through coursework, assignments, practical requirements, or certification prep.',
   },
 ];
 
@@ -69,33 +69,33 @@ const serviceGroups = [
 const testimonials = [
   {
     name: 'Marissa R.',
-    exam: 'WGU Coursework Support',
-    text: 'I had multiple WGU tasks open and no clear order of attack. Elite helped me organize everything, understand what each requirement needed, and finally make steady progress again.',
+    exam: 'WGU Course Management',
+    text: 'I had multiple WGU tasks open and no clear order of action. Elite helped me understand the requirements, organize the workload, and keep momentum without feeling buried.',
   },
   {
     name: 'Daniel K.',
-    exam: 'ATI TEAS Readiness',
-    text: 'I was overwhelmed by the ATI TEAS and kept jumping between random materials. Their support gave me a clear plan, section priorities, and the confidence to stay consistent.',
+    exam: 'ATI TEAS Support',
+    text: 'I was overwhelmed by ATI TEAS requirements and kept jumping between random materials. Their support gave me a cleaner structure, clear section priorities, and real accountability.',
   },
   {
     name: 'Shania P.',
-    exam: 'GED and CNA Support',
-    text: 'Between GED review and CNA requirements, I felt behind before I even started. The team broke everything down into manageable steps and helped me keep moving without panic.',
+    exam: 'GED and CNA Requirements',
+    text: 'Between GED review and CNA requirements, I felt behind before I even started. The team broke everything into manageable steps and helped me move forward without panic.',
   },
   {
     name: 'Andre M.',
-    exam: 'Sophia Assignment Guidance',
-    text: 'Sophia felt simple at first, but the assignments started piling up. Elite helped me understand the expectations, plan my deadlines, and submit work I felt confident about.',
+    exam: 'Sophia Assignment Planning',
+    text: 'Sophia felt simple at first, but the assignments started piling up. Elite helped me understand the expectations, plan deadlines, and clean up my process.',
   },
   {
     name: 'Priya S.',
-    exam: 'CompTIA Certification Prep',
-    text: 'CompTIA topics were hard to organize on my own. I got a cleaner path through the material, better accountability, and a practical way to track what was ready and what was not.',
+    exam: 'CompTIA Certification Support',
+    text: 'CompTIA topics were hard to organize on my own. I got a cleaner path through the material, better accountability, and a practical way to track readiness.',
   },
   {
     name: 'Carlos V.',
-    exam: 'StraighterLine Course Help',
-    text: 'I needed structure more than anything. They helped me map the course, stay on schedule, and understand the parts that were slowing me down.',
+    exam: 'StraighterLine Course Support',
+    text: 'I needed structure more than anything. They helped me map the course, understand the task flow, and stay on schedule.',
   },
 ];
 
@@ -110,27 +110,27 @@ const Home = () => {
           <div className="hero-copy animate-fade-up">
             <p className="eyebrow eyebrow-light">
               <Sparkles size={14} />
-              Online course, assignment, and certification support
+              Coursework, assignment, practical, and certification support
             </p>
             <h1>
-              Turn test stress into a clear, measurable plan to pass.
+              Academic deadlines feel lighter when the workload is organized.
             </h1>
             <p className="hero-lead">
-              Elite Exam Assistance helps students recover from missed scores, rebuild
-              confidence, and move through exams, coursework, and certifications with a clear plan.
+              Elite Exam Assistance helps students manage online courses, assignment pressure,
+              practical requirements, and certification prep with a clear, private support plan.
             </p>
             <div className="hero-actions">
               <Link to="/book-call" className="btn btn-accent">
-                Book a Free Strategy Call <ArrowRight size={18} />
+                Request Academic Support <ArrowRight size={18} />
               </Link>
               <Link to="/about" className="btn btn-secondary">
-                See how we work
+                See our process
               </Link>
             </div>
             <div className="hero-proof">
               <div>
-                <strong>Trusted by anxious test takers</strong>
-                <span>Built for online courses, assignments, GED, TEAS, HESI, CNA, and CompTIA.</span>
+                <strong>Trusted by busy online students</strong>
+                <span>Built for courses, assignments, practicals, GED, TEAS, HESI, CNA, and CompTIA.</span>
               </div>
               <div className="hero-stars" aria-label="Five star support">
                 {[...Array(5)].map((_, index) => (
@@ -166,15 +166,15 @@ const Home = () => {
             <div className="hero-card hero-card-floating">
               <div className="hero-chip">
                 <BookOpen size={18} />
-                Weekly course support roadmap
+                Course and assignment roadmap
               </div>
               <div className="hero-chip">
                 <Clock3 size={18} />
-                Flexible online scheduling
+                Flexible online coordination
               </div>
               <div className="hero-chip">
                 <ShieldCheck size={18} />
-                Accountability that sticks
+                Deadline accountability
               </div>
             </div>
           </div>
@@ -195,11 +195,11 @@ const Home = () => {
       <section className="section">
         <div className="container">
           <div className="section-heading animate-fade-up">
-            <p className="eyebrow">Why students stay with us</p>
-            <h2>We replace generic advice with focused support that changes outcomes.</h2>
+            <p className="eyebrow">Why students choose us</p>
+            <h2>We help turn messy academic requirements into a clear path forward.</h2>
             <p>
-              The difference is clarity. Students need to know what matters, what to prioritize,
-              and how to stay composed when deadlines and exams feel heavy.
+              Students come to us when coursework, assignments, practicals, and certification
+              requirements start stacking up and they need organized, private support.
             </p>
           </div>
 
@@ -218,11 +218,11 @@ const Home = () => {
       <section className="section service-showcase-section">
         <div className="container">
           <div className="section-heading animate-fade-up">
-            <p className="eyebrow">What we offer</p>
-            <h2>Online course support and certification prep built around the exact path you are on.</h2>
+            <p className="eyebrow">What we handle</p>
+            <h2>Academic support for online courses, assignments, practicals, and certifications.</h2>
             <p>
-              We support students working through online academic platforms and major certification
-              exams with focused help that keeps progress moving.
+              We support students working through course platforms, assignment instructions,
+              practical requirements, and certification expectations with a clear process.
             </p>
           </div>
 
@@ -258,14 +258,14 @@ const Home = () => {
       <section className="section section-muted">
         <div className="container process-layout">
           <div className="process-copy animate-fade-up">
-            <p className="eyebrow">How we build momentum</p>
-            <h2>A simple three-step system that gives you traction fast.</h2>
+            <p className="eyebrow">How support works</p>
+            <h2>A simple system for turning academic pressure into organized progress.</h2>
             <p>
-              This is a hands-on academic support system. We reduce noise, sharpen decisions,
-              and push you toward the course progress or score you need.
+              We focus on clarity, requirements, timelines, and accountability so you are not
+              trying to manage everything alone.
             </p>
             <Link to="/services" className="btn btn-primary">
-              Explore programs
+              View services
             </Link>
           </div>
 
@@ -284,20 +284,20 @@ const Home = () => {
       <section className="section">
         <div className="container success-panel">
           <div className="success-copy animate-fade-up">
-            <p className="eyebrow">Support beyond content review</p>
-            <h2>You do not need more pressure. You need a better system.</h2>
+            <p className="eyebrow">Built for overloaded students</p>
+            <h2>You do not need more pressure. You need academic work to feel organized.</h2>
             <div className="success-points">
               <p>
                 <CheckCircle2 size={18} />
-                Structured assignment guidance and feedback loops
+                Assignment requirement breakdowns and feedback loops
               </p>
               <p>
                 <CheckCircle2 size={18} />
-                Strategy support for pacing, confidence, and question selection
+                Practical prep, course planning, and certification readiness support
               </p>
               <p>
                 <CheckCircle2 size={18} />
-                Clear accountability so progress does not stall between support blocks
+                Clear accountability so deadlines and requirements do not get lost
               </p>
             </div>
           </div>
@@ -305,10 +305,10 @@ const Home = () => {
           <div className="success-quote animate-fade-up delay-200">
             <MessageSquareMore size={28} />
             <p>
-              “I stopped spinning my wheels. For the first time, I had a plan that matched my
-              actual weaknesses instead of random advice from the internet.”
+              “I stopped opening ten tabs and panicking. For the first time, I had a clear view
+              of what needed to happen next.”
             </p>
-            <strong>Former repeat test taker, now passed</strong>
+            <strong>Online course student with multiple deadlines</strong>
           </div>
         </div>
       </section>
@@ -316,8 +316,8 @@ const Home = () => {
       <section className="section testimonials-section">
         <div className="container">
           <div className="section-heading section-heading-light animate-fade-up">
-            <p className="eyebrow eyebrow-light">Student wins</p>
-            <h2>Students trust us when coursework, assignments, and certification pressure start piling up.</h2>
+            <p className="eyebrow eyebrow-light">Student experiences</p>
+            <h2>Students come to us when academic pressure starts piling up.</h2>
           </div>
 
           <div className="testimonial-grid">
@@ -345,13 +345,13 @@ const Home = () => {
       <section className="section">
         <div className="container final-cta animate-fade-up">
           <p className="eyebrow">Ready when you are</p>
-          <h2>Let’s build the plan that gets you over the finish line.</h2>
+          <h2>Let’s organize the course, assignment, or certification pressure in front of you.</h2>
           <p>
-            Book a free intro call and we’ll map out your priorities, timeline, and best next
-            move before you commit to anything.
+            Send your details and we’ll reach out to understand your deadline, platform, and
+            academic support needs before recommending the next move.
           </p>
           <Link to="/book-call" className="btn btn-accent">
-            Get Started Today <ArrowRight size={18} />
+            Request Support <ArrowRight size={18} />
           </Link>
         </div>
       </section>

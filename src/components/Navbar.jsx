@@ -46,7 +46,7 @@ const Navbar = () => {
             </Link>
           ))}
           <Link to="/book-call" className="btn btn-accent btn-compact">
-            Book a Strategy Call
+            Request Support
           </Link>
         </nav>
 
@@ -64,7 +64,7 @@ const Navbar = () => {
 
       <div className={`mobile-nav ${isOpen ? 'open' : ''}`} id="mobile-nav">
         <div className="mobile-nav-content">
-          <p className="eyebrow">Support built around your score goals</p>
+          <p className="eyebrow">Academic support built around your deadline</p>
           {links.map((link) => (
             <Link
               key={link.path}
@@ -76,7 +76,7 @@ const Navbar = () => {
             </Link>
           ))}
           <Link to="/book-call" className="btn btn-accent mobile-cta" onClick={() => setIsOpen(false)}>
-            Start Your Plan <ArrowRight size={18} />
+            Request Support <ArrowRight size={18} />
           </Link>
         </div>
       </div>

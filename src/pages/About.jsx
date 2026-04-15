@@ -4,18 +4,18 @@ import { Link } from 'react-router-dom';
 const values = [
   {
     icon: <Shield size={24} />,
-    title: 'High standards',
-    text: 'Students trust us with high-stakes goals, so we bring structure, preparation, and honest guidance to every milestone.',
+    title: 'Clear standards',
+    text: 'Students trust us with high-stakes academic pressure, so we bring structure, privacy, and clear communication to every milestone.',
   },
   {
     icon: <HeartHandshake size={24} />,
     title: 'Human support',
-    text: 'We understand what it feels like to be discouraged, behind schedule, or unsure where to start, and we support students from that reality.',
+    text: 'We understand what it feels like to be behind, overwhelmed, or unsure where to start, and we support students from that reality.',
   },
   {
     icon: <Rocket size={24} />,
     title: 'Forward momentum',
-    text: 'The goal is not to feel busy. The goal is to make each week count and keep progress moving in the right direction.',
+    text: 'The goal is not to feel busy. The goal is to make each deadline count and keep progress moving in the right direction.',
   },
 ];
 
@@ -25,10 +25,10 @@ const About = () => {
       <section className="page-hero page-hero-dark">
         <div className="container page-hero__content animate-fade-up">
           <p className="eyebrow eyebrow-light">About Elite Exam Assistance</p>
-          <h1>We help students rebuild belief in themselves and back it up with a real plan.</h1>
+          <h1>We help students manage academic pressure with structure, privacy, and a clear plan.</h1>
           <p>
-            Our work sits at the intersection of academic support, strategy, and steady encouragement.
-            We are here for the student who knows they can do more but needs the right support to prove it.
+            Our work sits at the intersection of coursework support, assignment planning,
+            practical readiness, certification preparation, and steady accountability.
           </p>
         </div>
       </section>
@@ -37,15 +37,14 @@ const About = () => {
         <div className="container about-layout">
           <div className="about-story animate-fade-up">
             <p className="eyebrow">Our mission</p>
-            <h2>Take the fear and confusion out of high-stakes exam prep.</h2>
+            <h2>Take the confusion out of online courses, assignments, practicals, and exams.</h2>
             <p>
-              Elite Exam Assistance was built for students who are tired of generic advice and
-              random course routines. We focus on the patterns behind low scores, then create a
-              targeted path toward stronger performance.
+              Elite Exam Assistance was built for students who are tired of scattered tabs,
+              confusing instructions, overdue tasks, and unclear course expectations.
             </p>
             <p>
-              That means better review systems, better pacing, better confidence, and a support team
-              that understands both the academic and emotional side of the process.
+              We help turn academic pressure into an organized plan, so coursework, assignments,
+              practical requirements, and certification goals feel easier to manage.
             </p>
             <Link to="/services" className="btn btn-primary">
               Explore our services
@@ -56,16 +55,16 @@ const About = () => {
             <div className="about-highlight__card">
               <Users size={28} />
               <strong>Students first</strong>
-              <p>Every recommendation is tailored to the person, not forced into a one-size-fits-all package.</p>
+              <p>Every support plan is tailored to the student, platform, deadline, and requirement in front of them.</p>
             </div>
             <div className="about-highlight__stats">
               <div>
                 <span>97%</span>
-                <p>report stronger confidence after consistent support</p>
+                <p>report feeling more organized after consistent support</p>
               </div>
               <div>
                 <span>7 days</span>
-                <p>of weekly flexibility for busy students and working professionals</p>
+                <p>of weekly flexibility for busy students, working adults, and online learners</p>
               </div>
             </div>
           </div>
@@ -76,7 +75,7 @@ const About = () => {
         <div className="container">
           <div className="section-heading animate-fade-up">
             <p className="eyebrow">What guides our work</p>
-            <h2>The values behind every plan, milestone, and student conversation.</h2>
+            <h2>The values behind every plan, deadline, and student conversation.</h2>
           </div>
           <div className="value-grid">
             {values.map(({ icon, title, text }, index) => (

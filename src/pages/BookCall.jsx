@@ -29,11 +29,11 @@ const BookCall = () => {
     <div className="page standard-page">
       <section className="page-hero page-hero-dark">
         <div className="container page-hero__content animate-fade-up">
-          <p className="eyebrow eyebrow-light">Book a strategy call</p>
-          <h1>Tell us where you need support, and we’ll reach out to you.</h1>
+          <p className="eyebrow eyebrow-light">Request academic support</p>
+          <h1>Tell us what you are working on, and we’ll reach out to you.</h1>
           <p>
             Share your contact details below. Our team will contact you to understand your course,
-            assignment, or certification goals and recommend the best next step.
+            assignment, practical, or certification situation and recommend the best next step.
           </p>
         </div>
       </section>
@@ -42,11 +42,11 @@ const BookCall = () => {
         <div className="container booking-layout">
           <div className="booking-info animate-fade-up">
             <p className="eyebrow">What happens next</p>
-            <h2>Simple, private, and quick.</h2>
+            <h2>Private, organized, and quick.</h2>
             <div className="booking-points">
               <p>
                 <CheckCircle2 size={18} />
-                We review your contact details and support request.
+                We review your contact details and academic support request.
               </p>
               <p>
                 <CheckCircle2 size={18} />
@@ -54,7 +54,7 @@ const BookCall = () => {
               </p>
               <p>
                 <CheckCircle2 size={18} />
-                We help you choose the right path for your course or certification.
+                We help you choose the right support path for your course, assignment, practical, or certification.
               </p>
             </div>
           </div>
@@ -123,7 +123,7 @@ const BookCall = () => {
                 </div>
 
                 <button type="submit" className="btn btn-accent booking-submit">
-                  Request a Call <ArrowRight size={18} />
+                  Request Support <ArrowRight size={18} />
                 </button>
               </form>
             )}

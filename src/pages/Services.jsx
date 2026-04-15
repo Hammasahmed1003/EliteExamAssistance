@@ -15,29 +15,29 @@ const courseServices = [
     icon: <LaptopMinimal size={24} />,
     title: 'StraighterLine',
     description:
-      'Structured online course support for students who need help staying on track, understanding the material, and finishing confidently.',
-    features: ['Course-by-course guidance', 'Weekly progress structure', 'Personalized support'],
+      'Organized support for students managing StraighterLine modules, deadlines, quizzes, and course requirements.',
+    features: ['Requirement breakdowns', 'Deadline mapping', 'Progress coordination'],
   },
   {
     icon: <BookText size={24} />,
     title: 'WGU Courses',
     description:
-      'Focused help for WGU students balancing deadlines, assessments, and self-paced coursework without losing momentum.',
-    features: ['Assessment prep', 'Concept review', 'Flexible online support'],
+      'Focused support for WGU students balancing tasks, assessments, rubrics, and self-paced coursework.',
+    features: ['Task organization', 'Assessment readiness', 'Rubric review support'],
   },
   {
     icon: <GraduationCap size={24} />,
     title: 'Sophia',
     description:
-      'Clear, step-by-step guidance for Sophia courses so assignments feel organized and credits keep moving forward.',
-    features: ['Assignment guidance', 'Pacing help', 'Smarter course strategy'],
+      'Clear support for Sophia courses so assignments, milestones, and course flow stay organized.',
+    features: ['Assignment planning', 'Pacing support', 'Course flow management'],
   },
   {
     icon: <BrainCircuit size={24} />,
     title: 'Apex Courses',
     description:
-      'Targeted Apex coursework support that helps students stay organized, understand concepts, and finish strong.',
-    features: ['Concept reinforcement', 'Deadline planning', 'Confidence-building review'],
+      'Targeted Apex coursework support for students managing modules, requirements, and deadlines.',
+    features: ['Module planning', 'Deadline planning', 'Requirement support'],
   },
 ];
 
@@ -46,43 +46,43 @@ const certificationServices = [
     icon: <Trophy size={24} />,
     title: 'GED',
     description:
-      'Prep that strengthens weak areas, improves test readiness, and helps students approach the GED with a clear plan.',
-    features: ['Skill-gap review', 'Practice support', 'Test-day confidence'],
+      'GED support for students who need clear organization, requirement review, and readiness planning.',
+    features: ['Requirement review', 'Readiness planning', 'Confidence support'],
   },
   {
     icon: <Trophy size={24} />,
     title: 'TEAS',
     description:
-      'Strategic TEAS support focused on content mastery, timing, and consistent improvement across sections.',
-    features: ['Science and math review', 'Pacing strategy', 'Targeted review'],
+      'TEAS support focused on section priorities, timeline control, and exam readiness.',
+    features: ['Section priorities', 'Timeline control', 'Readiness review'],
   },
   {
     icon: <Trophy size={24} />,
     title: 'ATI TEAS',
     description:
-      'Specialized ATI TEAS prep designed to sharpen high-yield topics and reduce score-killing uncertainty.',
-    features: ['High-yield prep plans', 'Section strategy', 'Performance tracking'],
+      'ATI TEAS support designed to organize high-priority sections and reduce last-minute uncertainty.',
+    features: ['Priority planning', 'Section strategy', 'Readiness tracking'],
   },
   {
     icon: <Trophy size={24} />,
     title: 'HESI',
     description:
-      'A guided HESI prep path for students who want stronger understanding, cleaner execution, and less test anxiety.',
-    features: ['Weak-area targeting', 'Question breakdowns', 'Confidence support'],
+      'HESI support for students who need structure, requirement clarity, and calmer preparation.',
+    features: ['Requirement clarity', 'Question review', 'Confidence support'],
   },
   {
     icon: <Trophy size={24} />,
     title: 'CNA',
     description:
-      'Support for CNA students who need help preparing with practical, easy-to-follow review plans.',
-    features: ['Foundational review', 'Exam readiness support', 'Structured repetition'],
+      'CNA support for students managing written requirements, practical expectations, and readiness pressure.',
+    features: ['Practical readiness', 'Exam requirement support', 'Structured review'],
   },
   {
     icon: <Trophy size={24} />,
     title: 'CompTIA',
     description:
-      'Certification prep for CompTIA students who need organized structure and a clearer path through technical material.',
-    features: ['Topic-by-topic guidance', 'Progress accountability', 'Exam-focused review'],
+      'CompTIA support for students who need organized structure across technical topics and exam requirements.',
+    features: ['Topic organization', 'Progress accountability', 'Requirement review'],
   },
 ];
 
@@ -91,11 +91,11 @@ const Services = () => {
     <div className="page standard-page">
       <section className="page-hero">
         <div className="container page-hero__content animate-fade-up">
-          <p className="eyebrow">Programs built for real score movement</p>
-          <h1>Online courses and certification prep tailored to the path you are on.</h1>
+          <p className="eyebrow">Academic support services</p>
+          <h1>Coursework, assignment, practical, and certification support for busy students.</h1>
           <p>
-            We support students across flexible online course platforms and high-stakes
-            certifications with a plan that turns confusion into forward motion.
+            We help students make sense of online platforms, deadlines, rubrics, practical
+            requirements, and certification expectations with a clear support process.
           </p>
         </div>
       </section>
@@ -104,7 +104,7 @@ const Services = () => {
         <div className="container">
           <div className="section-heading animate-fade-up">
             <p className="eyebrow">Online courses</p>
-            <h2>Flexible support for self-paced platforms where students often need structure most.</h2>
+            <h2>Support for self-paced platforms where deadlines and requirements can pile up fast.</h2>
           </div>
           <div className="service-grid">
             {courseServices.map(({ icon, title, description, features }, index) => (
@@ -130,7 +130,7 @@ const Services = () => {
         <div className="container">
           <div className="section-heading animate-fade-up">
             <p className="eyebrow">Certifications</p>
-            <h2>Prep support for exams that require precision, repetition, and confidence under pressure.</h2>
+            <h2>Certification support for exams that require structure, readiness, and calm execution.</h2>
           </div>
           <div className="service-grid">
             {certificationServices.map(({ icon, title, description, features }, index) => (
@@ -155,15 +155,15 @@ const Services = () => {
       <section className="section">
         <div className="container consult-banner animate-fade-up">
           <div>
-            <p className="eyebrow">Need help choosing?</p>
-            <h2>We’ll point you to the right plan before you spend a dollar.</h2>
+            <p className="eyebrow">Need help sorting it out?</p>
+            <h2>We’ll help you identify the right support path before you commit.</h2>
             <p>
-              A quick strategy call helps us understand which course or certification you are
-              working on, where you feel stuck, and what kind of support will move you fastest.
+              A quick request helps us understand your course, assignment, practical, or
+              certification situation and what kind of support makes sense.
             </p>
           </div>
           <Link to="/about" className="btn btn-primary">
-            Meet the team <ArrowRight size={18} />
+            Learn more <ArrowRight size={18} />
           </Link>
         </div>
       </section>
@@ -172,23 +172,23 @@ const Services = () => {
         <div className="container checklist-panel">
           <div className="section-heading animate-fade-up">
             <p className="eyebrow">What students can expect</p>
-            <h2>A premium academic support experience with structure, warmth, and accountability.</h2>
+            <h2>A premium support experience built around requirements, timelines, and accountability.</h2>
           </div>
           <div className="checklist-grid">
             <article className="checklist-card animate-fade-up delay-100">
               <BadgeCheck size={22} />
               <h3>Clear milestones</h3>
-              <p>We set weekly goals, review what changed, and adjust the plan without wasting time.</p>
+              <p>We organize what is due, what matters most, and what needs attention next.</p>
             </article>
             <article className="checklist-card animate-fade-up delay-200">
               <BookText size={22} />
-              <h3>Focused assignment guidance</h3>
-              <p>Coursework support is deliberate, manageable, and directly tied to your next breakthrough.</p>
+              <h3>Focused assignment planning</h3>
+              <p>Assignment instructions, rubrics, and deadlines are broken into manageable next steps.</p>
             </article>
             <article className="checklist-card animate-fade-up delay-300">
               <BrainCircuit size={22} />
               <h3>Calmer execution</h3>
-              <p>We support the mental side too, because strong knowledge still needs strong performance under pressure.</p>
+              <p>We help reduce the panic that comes from messy platforms, unclear requirements, and tight timelines.</p>
             </article>
           </div>
         </div>
