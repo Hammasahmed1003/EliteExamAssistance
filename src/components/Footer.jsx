@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { ArrowUpRight, Mail, MapPin, Phone } from 'lucide-react';
+import { ArrowUpRight, MapPin, Phone } from 'lucide-react';
 
 const quickLinks = [
   { label: 'Home', to: '/' },
@@ -48,11 +48,7 @@ const Footer = () => {
             </p>
             <p>
               <Phone size={16} />
-              (555) 123-4567
-            </p>
-            <p>
-              <Mail size={16} />
-              support@eliteexam.com
+              +1 (346) 661-9978
             </p>
           </div>
         </div>

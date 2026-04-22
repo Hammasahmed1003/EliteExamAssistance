@@ -50,7 +50,7 @@ const BookCall = () => {
               </p>
               <p>
                 <CheckCircle2 size={18} />
-                We reach out to you by phone or email.
+                We reach out to you directly after reviewing your request.
               </p>
               <p>
                 <CheckCircle2 size={18} />
